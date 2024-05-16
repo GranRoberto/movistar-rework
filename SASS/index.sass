@@ -1,14 +1,182 @@
-*
-  color: white
+@use "./_general" as *
+@import "./_componentes"
+@import "./_responsive"
 
 body
   background-color: #000 // Negro
   &::before
-      content: ""
-      position: fixed
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      background: linear-gradient(to bottom, #000, #00ccff) // Azul marino
-      z-index: -1
+    content: ""
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, #000, #00ccff) // Azul marino
+    z-index: -1
+
+nav
+  @include displays(flex, space-between)
+  flex-direction: row
+  padding: 10px 40px 0
+
+nav a
+  cursor: pointer
+  font-size: 18px
+  margin: 10px
+  text-decoration: none
+
+.logo
+  border-radius: 40px
+
+header
+  @include displays(flex)
+  flex-direction: column
+  padding: 5px
+
+header h1
+  font-size: 50px
+  margin: 15px
+
+header p
+  font-size: 30px
+
+.consolas h1
+  @include displays(flex)
+  font-size: 30px
+
+.botones-consolas
+  @include displays(flex)
+  flex-direction: row
+  gap: 5px
+  margin: 15px 15px
+
+.consolas button
+  @include displays(flex)
+  border-radius: 40px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  gap: 5px
+  font-size: 17px
+
+.consolas img
+  border-radius: 100%
+
+.contenido
+  @include displays(flex)
+  flex-direction: column
+  padding: 30px 15px 0
+
+.planes
+  @include displays(flex)
+  height: 250px
+  width: 1150px
+  border: 2px solid #252525
+  border-radius: 50px
+  overflow: hidden
+  margin: 25px
+  background-color: white
+
+.titulo
+  @include displays(flex)
+  flex-direction: column
+  padding: 15px
+  background-color: #1b1d63
+  height: 100%
+  width: 190px
+  font-size: 30px
+
+.titulo h3
+  @include displays(flex)
+  font-size: 35px
+
+.info
+  @include displays(flex, center, baseline)
+  flex-direction: column
+  font-size: 16px
+  line-height: 2.1
+  padding: 10px
+  background-color: white
+  border-radius: 10px
+  height: 100%
+  width: 800px
+
+.info p
+  color: black
+
+.info strong
+  color: black
+
+.mas-info
+  background-color: #1b1d63
+  color: white
+  padding: 8px 10px
+  border: none
+  border-radius: 15px
+  cursor: pointer
+  width: 130px
+  margin: 0 15px 0 0
+  text-decoration: none
+
+.soluciones
+  @include displays(flex)
+  flex-direction: row
+  gap: 15px
+  margin: 15px
+
+.soluciones a
+  @include displays(flex)
+  border-radius: 40px
+  border: none
+  cursor: pointer
+  gap: 5px
+  font-size: 17px
+  color: black
+  width: 150px
+  height: 150px
+  background-color: white
+  text-decoration: none
+  padding: 5px
+
+.contacto
+  @include displays(grid)
+  grid-template-columns: repeat(2,1fr)
+  margin: 30px
+
+.texto-app
+  @include displays(grid)
+  grid-template-columns: repeat(2,1fr)
+  background-color: white
+  color: black
+  padding: 20px
+  gap: 5px
+
+.texto-app p
+  color: #1b1d63
+
+.texto-app strong
+  color: #1b1d63
+
+.uno
+  font-size: 20px
+.dos
+  font-size: 40px
+.tres
+  font-size: 30px
+
+.atencion img
+  margin: 30px 10px 0
+  border-radius: 100%
+
+.informacion-adicional
+  @include displays(grid)
+  grid-template-columns: repeat(4,1fr)
+  padding: 40px
+
+.informacion-adicional a
+  text-decoration: none
+  line-height: 2.1
+
+.informacion-adicional img
+  border-radius: 100%
+

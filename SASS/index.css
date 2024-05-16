@@ -1,7 +1,38 @@
 * {
   color: white;
+  margin: 0;
+  font-family: "Reddit Sans", sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .invisible {
+    display: none;
+  }
+  .invisible-a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .invisible {
+    display: none;
+  }
+  .invisible-a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .invisible {
+    display: none;
+  }
+  .invisible-a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .invisible {
+    display: block;
+  }
+}
 body {
   background-color: #000;
 }
@@ -14,4 +45,233 @@ body::before {
   height: 100%;
   background: linear-gradient(to bottom, #000, #00ccff);
   z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 40px 0;
+}
+
+nav a {
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  border-radius: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 15px;
+}
+
+header p {
+  font-size: 30px;
+}
+
+.consolas h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.botones-consolas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  margin: 15px 15px;
+}
+
+.consolas button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 17px;
+}
+
+.consolas img {
+  border-radius: 100%;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px 0;
+}
+
+.planes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 1150px;
+  border: 2px solid #252525;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 25px;
+  background-color: white;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #1b1d63;
+  height: 100%;
+  width: 190px;
+  font-size: 30px;
+}
+
+.titulo h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 2.1;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 800px;
+}
+
+.info p {
+  color: black;
+}
+
+.info strong {
+  color: black;
+}
+
+.mas-info {
+  background-color: #1b1d63;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 130px;
+  margin: 0 15px 0 0;
+  text-decoration: none;
+}
+
+.soluciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  margin: 15px;
+}
+
+.soluciones a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  font-size: 17px;
+  color: black;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.contacto {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px;
+}
+
+.texto-app {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  gap: 5px;
+}
+
+.texto-app p {
+  color: #1b1d63;
+}
+
+.texto-app strong {
+  color: #1b1d63;
+}
+
+.uno {
+  font-size: 20px;
+}
+
+.dos {
+  font-size: 40px;
+}
+
+.tres {
+  font-size: 30px;
+}
+
+.atencion img {
+  margin: 30px 10px 0;
+  border-radius: 100%;
+}
+
+.informacion-adicional {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px;
+}
+
+.informacion-adicional a {
+  text-decoration: none;
+  line-height: 2.1;
+}
+
+.informacion-adicional img {
+  border-radius: 100%;
 }/*# sourceMappingURL=index.css.map */
