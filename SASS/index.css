@@ -4,35 +4,6 @@
   font-family: "Reddit Sans", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-  .invisible {
-    display: none;
-  }
-  .invisible-a {
-    display: none;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .invisible {
-    display: none;
-  }
-  .invisible-a {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .invisible {
-    display: none;
-  }
-  .invisible-a {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .invisible {
-    display: block;
-  }
-}
 body {
   background-color: #000;
 }
@@ -83,6 +54,14 @@ header p {
   font-size: 30px;
 }
 
+.fondo-header {
+  background-image: url("./IMG/consolas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+}
+
 .consolas h1 {
   display: flex;
   justify-content: center;
@@ -129,7 +108,7 @@ header p {
   align-items: center;
   height: 250px;
   width: 1150px;
-  border: 2px solid #252525;
+  border: none;
   border-radius: 50px;
   overflow: hidden;
   margin: 25px;
@@ -215,6 +194,14 @@ header p {
   padding: 5px;
 }
 
+#contacto {
+  background-image: url(./IMG/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+}
+
 .contacto {
   display: grid;
   justify-items: center;
@@ -228,8 +215,6 @@ header p {
   justify-items: center;
   align-content: center;
   grid-template-columns: repeat(2, 1fr);
-  background-color: white;
-  color: black;
   padding: 20px;
   gap: 5px;
 }
