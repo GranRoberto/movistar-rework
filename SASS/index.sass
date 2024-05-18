@@ -1,6 +1,5 @@
 @use "./_general" as *
 @import "./_componentes"
-@import "./_responsive"
 
 body
   background-color: #000 // Negro
@@ -18,6 +17,13 @@ nav
   @include displays(flex, space-between)
   flex-direction: row
   padding: 10px 40px 0
+
+.invisible
+  display: none
+
+.nav-botones-derecha
+  @include displays(flex)
+  flex-direction: row
 
 nav a
   cursor: pointer
@@ -41,7 +47,7 @@ header p
   font-size: 30px
 
 .fondo-header
-  background-image: url("./IMG/consolas.jpg")
+  background-image: url("./../IMG/consolas.jpg")
   background-repeat: no-repeat
   background-size: cover
   background-position: center
@@ -193,3 +199,4 @@ header p
 .informacion-adicional img
   border-radius: 100%
 
+@import "./_responsive"

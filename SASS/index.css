@@ -26,6 +26,17 @@ nav {
   padding: 10px 40px 0;
 }
 
+.invisible {
+  display: none;
+}
+
+.nav-botones-derecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 nav a {
   cursor: pointer;
   font-size: 18px;
@@ -55,7 +66,7 @@ header p {
 }
 
 .fondo-header {
-  background-image: url("./IMG/consolas.jpg");
+  background-image: url("./../IMG/consolas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -259,4 +270,12 @@ header p {
 
 .informacion-adicional img {
   border-radius: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .invisible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.css.map */
